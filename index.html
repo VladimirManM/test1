@@ -1,12 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <title>Document</title>
+    <style>
+        #menu ul.dos {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+
+        
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            var cantidad = $("#menu li").length;
+
+            if (cantidad > 5) {
+                $("#menu ul").addClass('dos');
+            }
+        });
+    </script>
 </head>
 <body>
+    <div id="menu">
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+            <li>Elemento 1</li>
+        </ul>
+
+        <p>Numero de elementos:</p><span id="numero_elementos"></span>
+    </div>
     
 </body>
 </html>
